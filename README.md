@@ -58,5 +58,13 @@ API 規格書
 
 | 參數名稱 | 類型 | 說明 | 範例 |
 | :-- | :-- | :-- | :-- |
-| StudentNumber  | V | String | 帳號，也是學生的學號 |
-| StudentPassword  | String | String | 密碼 |
+| StatusCode  | Int | API執行狀態代碼 | 200 |
+| Message  | String | API執行狀態說明 | Success |
+
+- 範例
+    ```
+    {
+        "StatusCode":200,
+        "Message":"Success"
+    }
+    ```
