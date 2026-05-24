@@ -27,16 +27,16 @@ API 規格書
 | StudentNumber   | V    | String  | 帳號，也是學生的學號 |
 | StudentPassword | V    | String  | 密碼 |
 
-兩個欄位皆為必填
+註:兩個欄位皆為必填
 
 - 範例
-```
-{
-    "StudentNumber":"111703888",
-    "StudentPassword":"test01"
-}
-```  
-    - 回傳參數
+    ```
+    {
+        "StudentNumber":"111703888",
+        "StudentPassword":"test01"
+    }
+    ```  
+- 回傳參數
 
 | 參數名稱 | 類型 | 說明 | 範例 |
 | :-- | :-- | :-- | :-- |
