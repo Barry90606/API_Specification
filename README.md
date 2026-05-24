@@ -14,7 +14,7 @@ API 規格書
 01-v1.0 · 登入 API  
 ---
 使用對象  
-    - 頁面上的 login  
+        - 頁面上的 login  
 規格：  
     - api/login  
     - HTTP POST  
@@ -22,19 +22,16 @@ API 規格書
 | 參數名稱 | 必填 | 資料類型 | 說明 |
 | :-- | :--: | :-- | :-- |
 | StudentNumber  | V | String | 帳號，也是學生的學號 |
-| StudentPassword  | -[x] | String | 密碼 |
+| StudentPassword  | V | String | 密碼 |
 
-v 兩個欄位必填
-
-
-    - 範例
+v 兩個欄位必填  
+    - 範例  
 ```
 {
     "StudentNumber":"111703888",
     "StudentPassword":"test01"
 }
-```
-
+```  
     - 回傳參數
 
 | 參數名稱 | 類型 | 說明 | 範例 |
