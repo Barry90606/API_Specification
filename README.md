@@ -36,35 +36,27 @@ API 規格書
         "StudentPassword":"test01"
     }
     ```  
-    - 狀態說明
-
-    | 狀態碼 | 狀態描述 |
-    | :----- | :------ |
-    | 200    | 登入成功 |
-    | 400    | 參數錯誤（缺少帳號或密碼） |
-    | 401    | 帳號或密碼錯誤 |
-    | 500    | 伺服器錯誤 |
-
-    - 回傳格式範例
-
-    ```json
-    {
-        "status": 200,
-        "message": "login success"
-    }
-    ```
 
 - 回傳參數
 
 | 參數名稱 | 類型 | 說明 | 範例 |
 | :-- | :-- | :-- | :-- |
 | StatusCode  | Int | API執行狀態代碼 | 200 |
-| Message  | String | API執行狀態說明 | Success |
+| Message  | String | API執行狀態說明 | login success |
 
 - 範例
     ```
     {
         "StatusCode":200,
-        "Message":"Success"
+        "Message":"login success"
     }
     ```
+
+- 狀態說明
+
+| 狀態碼 | 狀態描述 |
+| :----- | :------ |
+| 200    | 登入成功 |
+| 400    | 參數錯誤（缺少帳號或密碼） |
+| 401    | 帳號或密碼錯誤 |
+| 500    | 伺服器錯誤 |
