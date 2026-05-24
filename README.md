@@ -17,13 +17,9 @@ API 規格書
 ### 使用對象
 - 頁面上的 login
 
----
-
 ### 規格
 - API：`api/login`
 - HTTP Method：POST
-
----
 
 ### 呼叫參數
 
@@ -32,12 +28,8 @@ API 規格書
 | StudentNumber   | V    | String  | 帳號，也是學生的學號 |
 | StudentPassword | V    | String  | 密碼 |
 
----
-
 ### 備註
 - 兩個欄位皆為必填
-
----
 
 ### 範例
 ```
