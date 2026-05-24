@@ -13,12 +13,12 @@ API 規格書
 
 01-v1.0 · 登入 API  
 ---
-使用對象
-    - 頁面上的 login
-規格：
-    - api/login
-    - HTTP POST
-    - 呼叫參數
+使用對象  
+    - 頁面上的 login  
+規格：  
+    - api/login  
+    - HTTP POST  
+    - 呼叫參數  
 | 參數名稱 | 必填 | 資料類型 | 說明 |
 | :-- | :--: | :-- | :-- |
 | StudentNumber  | V | String | 帳號，也是學生的學號 |
