@@ -13,20 +13,33 @@ API 規格書
 
 01-v1.0 · 登入 API  
 ---
-### 使用對象  
-    - 頁面上的 login  
-#### 規格：  
-    - api/login  
-    + HTTP POST  
-    - 呼叫參數  
-| 參數名稱 | 必填 | 資料類型 | 說明 |
-| :-- | :--: | :-- | :-- |
-| StudentNumber  | V | String | 帳號，也是學生的學號 |
-| StudentPassword  | V | String | 密碼 |
 
-v 兩個欄位必填  
+### 使用對象
+- 頁面上的 login
 
-        - 範例  
+---
+
+### 規格
+- API：`api/login`
+- HTTP Method：POST
+
+---
+
+### 呼叫參數
+
+| 參數名稱        | 必填 | 資料類型 | 說明 |
+| :-------------- | :--: | :------ | :--- |
+| StudentNumber   | V    | String  | 帳號，也是學生的學號 |
+| StudentPassword | V    | String  | 密碼 |
+
+---
+
+### 備註
+- 兩個欄位皆為必填
+
+---
+
+### 範例
 ```
 {
     "StudentNumber":"111703888",
