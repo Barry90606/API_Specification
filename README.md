@@ -13,9 +13,9 @@ API 規格書
 
 01-v1.0 · 登入 API  
 ---
-###使用對象  
+### 使用對象  
     - 頁面上的 login  
-####規格：  
+#### 規格：  
     - api/login  
     + HTTP POST  
     - 呼叫參數  
@@ -25,7 +25,8 @@ API 規格書
 | StudentPassword  | V | String | 密碼 |
 
 v 兩個欄位必填  
-    - 範例  
+
+        - 範例  
 ```
 {
     "StudentNumber":"111703888",
