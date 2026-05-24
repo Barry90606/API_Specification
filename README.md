@@ -1,2 +1,10 @@
-# for_markdown
-markdown pratice for database
+API 規格書
+===
+
+文件版本修正紀錄表
+---
+| 版號 | 編號 | 日期 | 修改者 | 項目 | 內容 |
+| :-- | :-- | :-- | :-- | :-- | :--|
+| v1.0  | 1 | 2026/5/24 | Barry | 新增 | add login|
+
+
