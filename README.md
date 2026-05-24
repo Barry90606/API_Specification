@@ -43,12 +43,16 @@ API 規格書
 | :-- | :-- | :-- | :-- |
 | StatusCode  | Int | API執行狀態代碼 | 200 |
 | Message  | String | API執行狀態說明 | login success |
+| Data | List<object> | 回傳資料以及參數 | "StudentNumber":"111703888" |
 
 - 範例
     ```
     {
         "StatusCode":200,
-        "Message":"login success"
+        "Message":"login success",
+        "Data": {
+            "StudentNumber":"111703888"
+        }
     }
     ```
 
