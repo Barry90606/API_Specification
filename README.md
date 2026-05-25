@@ -77,7 +77,7 @@ API 規格書
 取得登入學生的名字、科系、雙主修、輔修，已拿多少通識學分，以及該類型最多拿多少，所有類型的通識學分資訊
 
 ### 規格
-- API：/api/student/dashboard
+- API:`/api/dashboard`
 - HTTP Method：GET
 - 呼叫參數
 
@@ -105,9 +105,9 @@ API 規格書
             "Student_Info": {
                 "Name": "王小明",
                 "main_department": "資訊科學學系",
-                "secondary_department": Null,
+                "secondary_department": None,
                 "sub_main1_department": "數位內容學程",
-                "sub_main2_department": Null
+                "sub_main2_department": None
             },
             "General_Education_Graduation_Credits": {
                 "General_Education_Required_Credits": 28,
@@ -177,7 +177,7 @@ API 規格書
 - 主畫面「查看修課紀錄」按鈕點擊後，渲染修課清單頁面
 
 ### 規格
-- API：`api/student/details`
+- API：`api/details`
 - HTTP Method：GET
 - 呼叫參數
 
@@ -202,7 +202,7 @@ API 規格書
         "Message": "success",
         "Data": 
             "type": "humanities",
-            "courses":{
+            "courses":[
                 {
                 "class_name":"哲學概論",
                 "remark":"人文通識",
@@ -210,7 +210,7 @@ API 規格書
                 "credits":3,
                 "ispassed":True
                 }
-            }
+            ]
     }
     ```  
 
