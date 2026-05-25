@@ -92,9 +92,9 @@ API 規格書
 
 | 參數名稱 | 類型 | 說明 | 範例 |
 | :-- | :-- | :-- | :-- |
-| StatusCode  | Int | API執行狀態代碼 | 200 |
-| Message  | String | API執行狀態說明 | success |
-| Data | List<List<object>> | 回傳學生資料 | 請看下面範例 |
+| StatusCode  | Int                | API執行狀態代碼 | 200 |
+| Message     | String             | API執行狀態說明 | success |
+| Data        | List<List<object>> | 回傳學生資料    | 請看下面範例 |
 
 - 範例
     ```
@@ -164,8 +164,8 @@ API 規格書
 - 狀態說明
 
 | 狀態碼 | 狀態描述 |
-| :----- | :------ |
-| 200    | 登入成功 |
+| :----- | :------  |
+| 200    | 登入成功  |
 | 500    | 伺服器錯誤 |
 
 ---
@@ -184,41 +184,33 @@ API 規格書
 | 參數名稱        | 必填 | 資料類型 | 說明 |
 | :-------------- | :--: | :------ | :--- |
 | Authorization   | V    | String  | Bearer JWT Token |
-| Category | 否    | String  | 篩選類別 (all, HUM, SOC, NAT, INFO, COL, CHI, ENG, PE) |
+| Type            | V    | String  | 篩選類別 (all, humanities, social, sciences, computer, residential, chinese, foreign, PE) |
 
 - 回傳參數
 
-| 參數名稱 | 類型 | 說明 | 範例 |
-| :-- | :-- | :-- | :-- |
-| StatusCode  | Int | API執行狀態代碼 | 200 |
-| Message  | String | API執行狀態說明 | success |
-| Data | List<List<object>> | 該類別下的修課清單 | `請看下面範例` |
+| 參數名稱    | 類型                | 說明             | 範例 |
+| :---------- | :----------------- | :--------------- | :-- |
+| StatusCode  | Int                | API執行狀態代碼   | 200 |
+| Message     | String             | API執行狀態說明   | success |
+| Data.type   | String             | 修課類別          | 篩選類別 (all, humanities, social, sciences, computer, residential, chinese, foreign, PE) |
+| Data.courses| List<object>       | 該類別下的修課清單 | `請看下面範例` |
 
 - 範例
     ```
     {
         "StatusCode": 200,
         "Message": "success",
-        "Data": [
-            {
-                "passed": true,
-                "item": {
-                    "title": "哲學概論",
-                    "sub_category": "HUM",
-                    "is_core": true,
-                    "credits": 3
-                }
-            },
-            {
-                "passed": false,
-                "item": {
-                    "title": "Python程式設計",
-                    "sub_category": "INFO",
-                    "is_core": false,
-                    "credits": 3
+        "Data": 
+            "type": "humanities",
+            "courses":{
+                {
+                "class_name":"哲學概論",
+                "remark":"人文通識",
+                "core":True,
+                "credits":3,
+                "ispassed":True
                 }
             }
-        ]
     }
     ```  
 
