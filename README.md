@@ -5,9 +5,9 @@ API 規格書
 ---
 | 版號 | 編號 | 日期 | 修改者 | 項目 | 內容 |
 | :-- | :-- | :-- | :-- | :-- | :--|
-| v1.0  | 1 | 2026/5/24 | Barry | 新增 | add login|
-| v1.1  | 2 | 2026/5/25 | Barry | 新增 | add student data|
-
+| v1.0  | 1 | 2026/5/24 | Barry | 新增 | add login         |
+| v1.1  | 2 | 2026/5/25 | Barry | 新增 | add student data  |
+| v1.2  | 3 | 2026/5/25 | Paul  | 新增 | add course detail |
 
 ---
 
@@ -170,7 +170,7 @@ API 規格書
 
 ---
 
-修課紀錄 API
+03-v1.2 · 修課紀錄 API
 ---
 
 ### 使用對象
