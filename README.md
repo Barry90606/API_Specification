@@ -121,37 +121,37 @@ API 規格書
                 "Humanities_Maximum_Credits":7,
                 "Humanities_Required_Credits":3,
                 "Humanities_Credit_Taken": 2
-            }
+            },
             "Social":{
                 "Social_Maximum_Credits":7,
                 "Social_Required_Credits":3,
                 "Social_Credit_Taken": 2
-            }
+            },
             "Sciences":{
                 "Sciences_Maximum_Credits":7,
                 "Sciences_Required_Credits":3,
                 "Sciences_Credit_Taken": 2
-            }
+            },
             "Computer":{
                 "Computer_Maximum_Credits":0,
                 "Computer_Required_Credits":0,
                 "Computer_Credit_Taken": 0
-            }
+            },
             "Residential":{
                 "Residential_Maximum_Credits":3,
                 "Residential_Required_Credits":0,
                 "Residential_Credit_Taken": 1
-            }
+            },
             "Foreign":{
                 "Foreign_Maximum_Credits":6,
                 "Foreign_Required_Credits":6,
                 "Foreign_Credit_Taken": 3
-            }
+            },
             "Chinese":{
                 "Chinese_Maximum_Credits":6,
                 "Chinese_Required_Credits":3,
                 "Chinese_Credit_Taken": 3
-            }
+            },
             "PE":{
                 "PE_Maximum_Credits":4,
                 "PE_Required_Credits":4,
