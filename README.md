@@ -6,6 +6,7 @@ API 規格書
 | 版號 | 編號 | 日期 | 修改者 | 項目 | 內容 |
 | :-- | :-- | :-- | :-- | :-- | :--|
 | v1.0  | 1 | 2026/5/24 | Barry | 新增 | add login|
+| v1.1  | 2 | 2026/5/25 | Barry | 新增 | add student data|
 
 
 ---
@@ -18,7 +19,7 @@ API 規格書
 - 頁面上的 login
 
 ### 規格
-- API：`api/login`
+- API：`/api/login`
 - HTTP Method：POST
 - 呼叫參數
 
@@ -42,16 +43,18 @@ API 規格書
 | 參數名稱 | 類型 | 說明 | 範例 |
 | :-- | :-- | :-- | :-- |
 | StatusCode  | Int | API執行狀態代碼 | 200 |
-| Message  | String | API執行狀態說明 | login success |
-| Data | List<object> | 回傳資料以及參數 | "StudentNumber":"111703888" |
+| Message  | String | API執行狀態說明 | success |
+| Data | List<object> | 回傳資料以及判斷是哪位學生的參數 | "Token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.xxx.yyy","StudentNumber": "111703888","Name": "王小明" |
 
 - 範例
     ```
     {
         "StatusCode":200,
-        "Message":"login success",
+        "Message":"success",
         "Data": {
-            "StudentNumber":"111703888"
+            "Token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.xxx.yyy",
+            "StudentNumber": "111703888",
+            "Name": "王小明"
         }
     }
     ```
