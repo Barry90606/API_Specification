@@ -70,14 +70,14 @@ API 規格書
 
 ---
 
-02-v1.1 · 學生基本資料 API  
+02-v1.1 · 學生基本資料 API
 ---
 
 ### 使用對象
-- 取得登入學生的名字、科系、雙主修、輔修，已拿多少通識學分，以及該類型最多拿多少，所有類型的通識學分資訊
+取得登入學生的名字、科系、雙主修、輔修，已拿多少通識學分，以及該類型最多拿多少，所有類型的通識學分資訊
 
 ### 規格
-- API：`/api/student/dashboard`
+- API：/api/student/dashboard
 - HTTP Method：GET
 - 呼叫參數
 
@@ -94,7 +94,7 @@ API 規格書
 | :-- | :-- | :-- | :-- |
 | StatusCode  | Int | API執行狀態代碼 | 200 |
 | Message  | String | API執行狀態說明 | success |
-| Data | List<List<object>> | 回傳學生資料 | `請看下面範例` |
+| Data | List<List<object>> | 回傳學生資料 | 請看下面範例 |
 
 - 範例
     ```
@@ -169,3 +169,62 @@ API 規格書
 | 500    | 伺服器錯誤 |
 
 ---
+
+修課紀錄 API
+---
+
+### 使用對象
+- 主畫面「查看修課紀錄」按鈕點擊後，渲染修課清單頁面
+
+### 規格
+- API：`api/student/details`
+- HTTP Method：GET
+- 呼叫參數
+
+| 參數名稱        | 必填 | 資料類型 | 說明 |
+| :-------------- | :--: | :------ | :--- |
+| Authorization   | V    | String  | Bearer JWT Token |
+| Category | 否    | String  | 篩選類別 (all, HUM, SOC, NAT, INFO, COL, CHI, ENG, PE) |
+
+- 回傳參數
+
+| 參數名稱 | 類型 | 說明 | 範例 |
+| :-- | :-- | :-- | :-- |
+| StatusCode  | Int | API執行狀態代碼 | 200 |
+| Message  | String | API執行狀態說明 | success |
+| Data | List<List<object>> | 該類別下的修課清單 | `請看下面範例` |
+
+- 範例
+    ```
+    {
+        "StatusCode": 200,
+        "Message": "success",
+        "Data": [
+            {
+                "passed": true,
+                "item": {
+                    "title": "哲學概論",
+                    "sub_category": "HUM",
+                    "is_core": true,
+                    "credits": 3
+                }
+            },
+            {
+                "passed": false,
+                "item": {
+                    "title": "Python程式設計",
+                    "sub_category": "INFO",
+                    "is_core": false,
+                    "credits": 3
+                }
+            }
+        ]
+    }
+    ```  
+
+- 狀態說明
+
+| 狀態碼 | 狀態描述 |
+| :----- | :------ |
+| 200    | 查詢成功 |
+| 500    | 伺服器錯誤 |
