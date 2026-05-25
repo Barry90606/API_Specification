@@ -102,7 +102,7 @@ API 規格書
         "StatusCode":200,
         "Message":"success",
         "Data": {
-            "StudentInfo": {
+            "Student_Info": {
                 "Name": "王小明",
                 "main_department": "資訊科學學系",
                 "secondary_department": Null,
@@ -110,17 +110,63 @@ API 規格書
                 "sub_main2_department": Null,
                 "Minor": null
             },
-            "GeneralEducationGraduationCredits": {
-                "GeneralEducationRequiredCredits": 28,
-                "GeneralEducationTaken": 18
+            "General_Education_Graduation_Credits": {
+                "General_Education_Required_Credits": 28,
+                "General_Education_Taken": 18
             },
-            "CoreGeneralEducation": {
+            "CoreGeneral_Education": {
                 "Required":3,
                 "Taken": 2
             },
-            "humanities":{
-
+            "Humanities":{
+                "Humanities_Maximum_Credits":7,
+                "Humanities_Required_Credits":3,
+                "Humanities_Credit_Taken": 2
+            }
+            "Social":{
+                "Social_Maximum_Credits":7,
+                "Social_Required_Credits":3,
+                "Social_Credit_Taken": 2
+            }
+            "Sciences":{
+                "Sciences_Maximum_Credits":7,
+                "Sciences_Required_Credits":3,
+                "Sciences_Credit_Taken": 2
+            }
+            "Computer":{
+                "Computer_Maximum_Credits":0,
+                "Computer_Required_Credits":0,
+                "Computer_Credit_Taken": 0
+            }
+            "Residential":{
+                "Residential_Maximum_Credits":3,
+                "Residential_Required_Credits":0,
+                "Residential_Credit_Taken": 1
+            }
+            "Foreign":{
+                "Foreign_Maximum_Credits":6,
+                "Foreign_Required_Credits":6,
+                "Foreign_Credit_Taken": 3
+            }
+            "Chinese":{
+                "Chinese_Maximum_Credits":6,
+                "Chinese_Required_Credits":3,
+                "Chinese_Credit_Taken": 3
+            }
+            "PE":{
+                "PE_Maximum_Credits":4,
+                "PE_Required_Credits":4,
+                "PE_Credit_Taken": 3
             }
         }
     }
     ```
+
+- 狀態說明
+
+| 狀態碼 | 狀態描述 |
+| :----- | :------ |
+| 200    | 登入成功 |
+| 500    | 伺服器錯誤 |
+
+---
