@@ -85,7 +85,7 @@ API 規格書
 | :-------------| :--: | :------ | :--- |
 | Authorization |  V   | String  | Bearer JWT Token |
 
-註1:透過此Token判斷是哪一位學生
+註1:透過此Token判斷是哪一位學生  
 註2:只需要使用Token，不需要body
 
 - 回傳參數
@@ -119,7 +119,7 @@ API 規格書
                 "Taken": 2
             },
             "humanities":{
-                
+
             }
         }
     }
