@@ -107,8 +107,7 @@ API 規格書
                 "main_department": "資訊科學學系",
                 "secondary_department": Null,
                 "sub_main1_department": "數位內容學程",
-                "sub_main2_department": Null,
-                "Minor": null
+                "sub_main2_department": Null
             },
             "General_Education_Graduation_Credits": {
                 "General_Education_Required_Credits": 28,
